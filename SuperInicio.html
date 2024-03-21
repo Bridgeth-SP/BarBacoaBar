@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarBacoaBar</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .btn-white {
+            background-color: white;
+            color: black;
+        }
+        .logo {
+            height: auto; /* Mantiene la proporción de la imagen */
+        }
+        .container{
+            padding-top: 5%;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+    <div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
+        <div class="text-center">
+            <img src="./imagenes/LogoBarbacoa.png" class=" logo mb-4" alt="LOGO BARBACOABAR" style="max-width: 350px;">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <a href="Inicio.html" class="btn btn-white btn-block" id="btnEspanol" onclick="cambiarIdioma('es')">Español</a>
+                    <img src="./imagenes/banderaEspanna.jpg" alt="Bandera Española" class="img-fluid mt-2" style="max-width: 100px;">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <a href="Inicio.html" class="btn btn-white btn-block" id="btnIngles" onclick="cambiarIdioma('en')">English</a>
+                    <img src="./imagenes/banderaEnglish.jpg" alt="Bandera Inglesa" class="img-fluid mt-2" style="max-width: 100px; height:65px;">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <button type="button" class="btn btn-white btn-block" id="btnFrances" onclick="cambiarIdioma('fr')">FRANÇOIS</button>
+                    <img src="./imagenes/banderaFrancesa.png" alt="Bandera Francesa" class="img-fluid mt-2" style="max-width: 100px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function cambiarIdioma(idioma) {
+            // Almacena el idioma seleccionado en localStorage
+            localStorage.setItem('idioma', idioma);
+            // Redirige a la página de inicio
+            window.location.href = 'Inicio.html';
+        }
+    </script>
+</body>
+
+</html>
