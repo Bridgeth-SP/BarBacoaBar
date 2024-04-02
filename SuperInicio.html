@@ -30,15 +30,15 @@
             <img src="./imagenes/LogoBarbacoa.png" class=" logo mb-4" alt="LOGO BARBACOABAR" style="max-width: 350px;">
             <div class="row">
                 <div class="col-md-4 mb-3">
-                    <a href="#" class="btn btn-white btn-block" id="btnEspanol" onclick="cambiarIdioma('es')">Español</a>
+                    <a href="./Inicio.html" class="btn btn-white btn-block" id="btnEspanol" >Español</a>
                     <img src="./imagenes/banderaEspanna.jpg" alt="Bandera Española" class="img-fluid mt-2" style="max-width: 100px;">
                 </div>
                 <div class="col-md-4 mb-3">
-                    <a href="#" class="btn btn-white btn-block" id="btnIngles" onclick="cambiarIdioma('en')">English</a>
+                    <a href="#" class="btn btn-white btn-block" id="btnIngles">English</a>
                     <img src="./imagenes/banderaEnglish.jpg" alt="Bandera Inglesa" class="img-fluid mt-2" style="max-width: 100px; height:65px;">
                 </div>
                 <div class="col-md-4 mb-3">
-                    <button type="button" class="btn btn-white btn-block" id="btnFrances" onclick="cambiarIdioma('fr')">FRANÇOIS</button>
+                    <button type="button" class="btn btn-white btn-block" id="btnFrances">FRANÇOIS</button>
                     <img src="./imagenes/banderaFrancesa.png" alt="Bandera Francesa" class="img-fluid mt-2" style="max-width: 100px;">
                 </div>
             </div>
@@ -69,15 +69,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        function cambiarIdioma(idioma) {
-            // Almacena el idioma seleccionado en una cookie con una expiración de 30 días
-            document.cookie = "idioma=" + idioma + "; expires=" + new Date(new Date().getTime() + 30 * 24 * 60 * 60 * 1000).toUTCString() + "; path=/";
-            // Redirige a la página de inicio
-            window.location.href = 'Inicio.html';
-        }
-    </script>
 
     <!-- Bootstrap y jQuery (Necesarios para los modales) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
