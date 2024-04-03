@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bar Bacoa Bar</title>
+    <title>Contacto</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons CSS -->
@@ -21,16 +21,9 @@
         }
 
         /* Estilo para el hero section */
-        .hero-section {
-            background-image: url('/ejemploInterior.jpeg');
-            background-size: cover;
-            background-position: center;
-            color: #fff;
-            text-align: center;
-            padding: 350px 0;
-        }
 
         .hero-section h1 {
+            margin-top: 5%;
             font-size: 3rem;
             margin-bottom: 20px;
         }
@@ -70,6 +63,9 @@
             margin: 0 auto;
             /* Centrar horizontalmente */
         }
+        .form-group{
+            padding-bottom: 2%;
+        }
     </style>
 </head>
 
@@ -100,82 +96,69 @@
             <a class="navbar-brand mx-auto" href="#">Bar <span>Bacoa</span> Bar</a>
             <!-- Íconos a la derecha -->
             <div class="navbar-nav">
-                <a class="nav-link" href="#"><i class="bi bi-person"></i></a>
-                <a class="nav-link" href="#"><i class="bi bi-telephone"></i></a>
+                <a class="nav-link" href="mailto:jmg0040@alu.medac.es"><i class="bi bi-person"></i></a>
+                <a class="nav-link" href="tel:+34690904462" id="tel-link"><i class="bi bi-telephone"></i></a>
             </div>
         </div>
     </nav>
 
     <div class="hero-section">
         <div class="container">
-            <h1>Bienvenido a Bar Bacoa Bar</h1>
-            <p>Porque una buena Barbacoa es justa y necesaria</p>
+            <h1>Contáctenos</h1>
             <!-- <a href="#" class="btn btn-primary btn-lg">Reserva ahora</a> OPCIONAL RESERVA-->
         </div>
     </div>
 
     <div class="container text-center">
-        <h2 class="mt-4">Imágenes</h2>
-        <!-- Carousel para imágenes -->
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/barbacoa1.jpeg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="/barbacoa2.jpeg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="/barbacoa3.jpeg" class="d-block w-100" alt="...">
-                </div>
-                <!-- Agrega más imágenes aquí -->
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        <!--
+        <div class="container mt-5">
+            <script src="https://app.formpress.org/runtime/embed.js"
+                data-fp-id="0213ef91-8af0-4ef4-9041-31609ac14532"> </script>
         </div>
-        <!-- Fin del Carousel -->
+    -->
 
-        <div class="container text-center">
+        <div class="container mt-5">
             <div class="row">
-                <div class="col">
-                    <h2 class="mt-4">Horario</h2>
-                    <p>Lunes a Viernes: 12:00 pm - 12:00 am<br>
-                        Sábado y Domingo: 10:00 am - 2:00 am</p>
-                    <div class="col-lg-6">
-                        <h5 class="mb-4">Síguenos</h5>
-                        <ul class="list-unstyled list-inline">
-                            <li class="list-inline-item"><a href="#" class="text-black"><i
-                                        class="bi bi-instagram"></i></a></li>
-                            <li class="list-inline-item"><a href="#" class="text-black"><i
-                                        class="bi bi-facebook"></i></a></li>
-                        </ul>
+                <div class="col-md-8 offset-md-2">
+                    <div class="contact-form">
+                        <h2 class="text-center mb-4">Formulario de Contacto</h2>
+                        <form action="https://formsubmit.co/72029808ce7a403735b3ca3015f9e0b8" method="POST">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="nombre" placeholder="Nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="correo" placeholder="Correo electrónico"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="asunto" placeholder="Asunto" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="mensaje" rows="5" placeholder="Mensaje"
+                                    required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="hidden" name="_captcha" value="true">
+                                <input type="hidden" name="_next" value="https://barbacoabar.com/Inicio.html">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-dark btn-block">Enviar Mensaje</button>
+                            </div>
+                        </form>
                     </div>
-                </div>
-                <div class="col">
-                    <h2 class="mt-4">¿DÓNDE ESTAMOS UBICADOS?</h2>
-                    <!-- Mapa -->
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3200.755682715776!2d-3.706463384679088!3d40.407486379364365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227d35e08d459%3A0xe199e4dc70fc380f!2sBar%20El%20Rinc%C3%B3n%20Guay!5e0!3m2!1ses!2ses!4v1647944871121!5m2!1ses!2ses"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
     </div>
+
     <footer class="bg-dark text-white py-5">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-4 col-md-6 col-sm-12 mx-auto text-lg-start">
                     <h5 class="mb-4">Reservas</h5>
                     <p><strong>Teléfono:</strong> +34 12 345 67 89</p>
-                    <p><strong>Email:</strong> <a href="mailto:asdf@asdfbar.es" class="text-white">asdf@asdfbar.es</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:asdf@asdfbar.es" class="text-white">asdf@asdfbar.es</a>
+                    </p>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 mx-auto text-lg-start">
                     <h5 class="mb-4">Dirección</h5>
@@ -191,10 +174,20 @@
                 </div>
             </div>
         </div>
-    </footer>    
+    </footer>
 
     <!-- Bootstrap JavaScript (opcional, si necesitas funcionalidad JS de Bootstrap) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/dispositivo.js"></script>
+    <!----extra-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
 </body>
 
 </html>
