@@ -351,7 +351,7 @@ body.nav-active {
 }
 
 .section-subtitle::after {
-  content: url('../images/separator.svg');
+  content: url('../img/separator.svg');
   display: block;
   width: 100px;
   margin-inline: auto;
@@ -880,7 +880,28 @@ body.nav-active {
   pointer-events: all;
 }
 
+.idiomas-dropdown {
+  display: none;
+}
 
+#idiomas-dropdown.active {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .navbar-item {
+    position: relative;
+  }
+  
+  .idiomas-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--smoky-black-1);
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
 
 
 
@@ -1597,7 +1618,7 @@ textarea.input-field {
 
 
 /**
- * responsive for larger than 768px screen
+ * Than 768px screen
  */
 
 @media (min-width: 768px) {

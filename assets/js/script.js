@@ -78,6 +78,13 @@ window.addEventListener("scroll", function () {
   }
 });
 
+const idiomasDropdownBtn = document.getElementById('idiomas-dropdown-btn');
+const idiomasDropdown = document.getElementById('idiomas-dropdown');
+
+idiomasDropdownBtn.addEventListener('click', function() {
+  idiomasDropdown.classList.toggle('active');
+});
+
 
 
 /**

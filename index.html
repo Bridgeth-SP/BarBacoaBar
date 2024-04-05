@@ -40,7 +40,6 @@
 </head>
 
 <body id="top">
-  
 
   <!-- 
     - #PRELOADER
@@ -157,6 +156,19 @@
               <span class="span">Sobre Nosotros</span>
             </a>
           </li>
+          
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline" id="idiomas-dropdown-btn">
+              <div class="separator"></div>
+              <span class="span">Idiomas</span>
+            </a>
+            <ul class="idiomas-dropdown" id="idiomas-dropdown">
+              <li><a href="/index.html">Español</a></li>
+              <li><a href="/indexIngles.html">Inglés</a></li>
+              <li><a href="/indexFrances.html">Francés</a></li>
+            </ul>
+          </li>
+          
         </ul>
 
         <div class="text-center">
@@ -211,21 +223,28 @@
 
             <p class="label-2 section-subtitle slider-reveal">By Paco Prado</p>
 
-            <h3 class="display-1 hero-title slider-reveal">
-              Una buena Barbacoa <br>
+            <h3 class="display-1 hero-title slider-reveal" style="font-size: 90px; margin-bottom: 30px;">
+              Porque una buena Barbacoa <br>
               es justa y necesaria
             </h3>
 
-            <p class="body-2 hero-text slider-reveal">
-              Bar Bacoa Bar
+            <p class="body-2 hero-text slider-reveal" style="margin-top: 50px;">
+              Bar <span style="color: red; display: inline;">Bacoa</span> Bar
             </p>
+            
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Menu</span>
+
+              <span class="text text-2" aria-hidden="true">Menu</span>
+            </a>
 
           </li>
 
           <li class="slider-item" data-hero-slider-item>
 
             <div class="slider-bg">
-              <img src="./assets/img/ejemplo2.jpg" width="1880" height="950" alt="" class="img-cover">
+              <img src="./assets/img/BarbacoaBackground.jpeg" width="1880" height="950" alt="" class="img-cover">
             </div>
 
             <p class="label-2 section-subtitle slider-reveal">By Paco Prado</p>
@@ -276,7 +295,7 @@
               <div class="menu-card hover:card">
 
                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-1.png" width="100" height="100" loading="lazy" alt="Greek Salad"
+                  <img src="./assets/img/HamburguesaLaMasGrande.png" width="100" height="100" loading="lazy" alt="Greek Salad"
                     class="img-cover">
                 </figure>
 
@@ -303,7 +322,7 @@
               <div class="menu-card hover:card">
 
                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-2.png" width="100" height="100" loading="lazy" alt="Lasagne"
+                  <img src="./assets/img/EnsaladaDePaco.png" width="100" height="100" loading="lazy" alt="Lasagne"
                     class="img-cover">
                 </figure>
 
@@ -331,7 +350,7 @@
               <div class="menu-card hover:card">
 
                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-3.png" width="100" height="100" loading="lazy" alt="Butternut Pumpkin"
+                  <img src="./assets/img/HamburguesaIberico.png" width="100" height="100" loading="lazy" alt="Butternut Pumpkin"
                     class="img-cover">
                 </figure>
 
@@ -358,7 +377,7 @@
               <div class="menu-card hover:card">
 
                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-4.png" width="100" height="100" loading="lazy" alt="Tokusen Wagyu"
+                  <img src="./assets/img/EnsaladaBarbacoa.png" width="100" height="100" loading="lazy" alt="Tokusen Wagyu"
                     class="img-cover">
                 </figure>
 
@@ -385,7 +404,7 @@
               <div class="menu-card hover:card">
 
                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-5.png" width="100" height="100" loading="lazy" alt="Olivas Rellenas"
+                  <img src="./assets/img/HamburguesaPacoPrado.png" width="100" height="100" loading="lazy" alt="Olivas Rellenas"
                     class="img-cover">
                 </figure>
 
@@ -412,7 +431,7 @@
               <div class="menu-card hover:card">
 
                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-6.png" width="100" height="100" loading="lazy" alt="Opu Fish"
+                  <img src="./assets/img/EnsaladaSinRodeos.png" width="100" height="100" loading="lazy" alt="Opu Fish"
                     class="img-cover">
                 </figure>
 
@@ -501,7 +520,7 @@
       -->
 
       <section class="section testi text-center has-bg-image"
-        style="background-image: url('./assets/images/testimonial-bg.jpg')" id="contacto">
+        style="margin-top: 10px; background-image: url('./assets/img/UPbackgroundBBQ.png')" id="contacto">
       </section>
 
       <section class="reservation">
@@ -585,7 +604,7 @@
               <input type="hidden" name="_next" value="https://barbacoabar.com/index.html">
             </form>
 
-            <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
+            <div class="form-right text-center" style="background-image: url('./assets/img/form-pattern.png')">
 
               <h2 class="headline-1 text-center">Contáctanos</h2>
 
@@ -713,7 +732,7 @@
     - #FOOTER
   -->
   <footer class="footer section has-bg-image text-center"
-    style="background-image: url('./assets/images/footer-bg.jpg')">
+    style="background-image: url('./assets/img/footer-bg.jpg')">
     <div class="container">
       <!-- Redes Sociales -->
       <ul class="footer-social">
@@ -725,8 +744,10 @@
 
       <div class="footer-bottom">
         <p class="copyright">
-          &copy; 2024 Bar Bacoa Bar. Todos los derechos reservados | <a href="./htmlEspannol/PoliticaDePrivacidad.html">Política de Privacidad</a> | <a
-            href="./htmlEspannol/PoliticaDeCookies.html">Política de Cookies</a> | <a href="./htmlEspannol/AvisoLegal.html">Aviso Legal</a>
+          &copy; 2024 Bar Bacoa Bar. Todos los derechos reservados | <a
+            href="./htmlEspannol/PoliticaDePrivacidad.html">Política de Privacidad</a> | <a
+            href="./htmlEspannol/PoliticaDeCookies.html">Política de Cookies</a> | <a
+            href="./htmlEspannol/AvisoLegal.html">Aviso Legal</a>
         </p>
       </div>
     </div>
