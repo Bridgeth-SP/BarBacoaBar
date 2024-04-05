@@ -3,222 +3,278 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bar Bacoa Bar Cookie Policy</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <style>
-        /* Estilos adicionales para el título */
-        .navbar-brand span {
-            color: red;
-        }
 
-        /*Estilos para el hero section*/
-        .hero-section h1 {
-            padding-top: 5%;
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
+    <!-- 
+    - Tags
+  -->
+    <title>Bar Bacoa Bar Politique en matière de cookies</title>
+    <meta name="title" content="Bar Barcoa Bar">
+    <meta name="description" content="Restaurante Bar Bacao Bar">
 
-        .hero-section p {
-            font-size: 1.2rem;
-            margin-bottom: 40px;
-        }
+    <!-- 
+    - BBQ Svg
+  -->
+    <link rel="shortcut icon" href="/assets/img/LogoWhite.svg" type="image/svg+xml">
 
-        /* Estilo personalizado para quitar la flecha */
-        .dropdown-toggle::after {
-            display: none;
-        }
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+        rel="stylesheet">
 
-        /* Estilo para el collage de imágenes */
-        .image-collage {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 50px;
-            padding-left: 3cm;
-            padding-right: 3cm;
-        }
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="/assets/css/style.css">
 
-        /* Estilo para las imágenes del carousel */
-        .carousel-item img {
-            object-fit: cover;
-            /* Ajuste de la imagen */
-            max-height: 500px;
-            /* Altura máxima */
-            max-width: 100%;
-            /* Ancho máximo */
-            height: auto;
-            /* Altura automática */
-            width: auto;
-            /* Ancho automático */
-            margin: 0 auto;
-            /* Centrar horizontalmente */
-            padding-bottom: 3%;
-        }
-    </style>
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="/assets/img/Ejemplo1.jpeg">
+    <link rel="preload" as="image" href="/assets/img/Ejemplo2.jpeg">
+    <link rel="preload" as="image" href="/assets/img/Ejemplo3.jpeg">
+
 </head>
 
-<body>
+<body id="top">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> <!-- Añadido fixed-top -->
-        <div class="container-fluid">
-            <!-- Menú a la izquierda -->
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <div class="dropdown">
-                        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi bi-list"></i>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="./Home.html">Home</a></li>
-                            <li><a class="dropdown-item" href="./Menu.html">Menu</a></li>
-                            <li><a class="dropdown-item" href="./Gallery.html">Gallery</a></li>
-                            <li><a class="dropdown-item" href="./Contact.html">Contact</a></li>
-                            <li><a class="dropdown-item" href="./PrivacyPolicy.html">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                </li>
+    <!-- 
+    - #PRELOADER
+  -->
+
+    <div class="preload" data-preaload>
+        <div class="circle"></div>
+        <p class="text">Bar Bacoa Bar Politique en matière de cookies</p>
+    </div>
+
+    <!-- 
+    - #TOP BAR
+  -->
+
+    <div class="topbar">
+        <div class="container">
+
+            <address class="topbar-item">
+                <div class="icon">
+                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <!-- Dirección Restaurante -->
+                <span class="span">
+                    C. de Embajadores, 62, Centro, 28005 Madrid
+                </span>
+            </address>
+
+            <div class="separator"></div>
+
+            <div class="topbar-item item-2">
+                <div class="icon">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <!-- Horario Daily -->
+                <span class="span">Heures : 10.00 am à 21.00 pm</span>
+            </div>
+
+            <a href="tel:+11234567890" class="topbar-item link">
+                <div class="icon">
+                    <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <!-- Teléfono Contacto -->
+                <span class="span">+1 123 456 7890</span>
+            </a>
+
+            <div class="separator"></div>
+
+            <!-- Correo Electrónico-->
+            <a href="mailto:booking@restaurant.com" class="topbar-item link">
+                <div class="icon">
+                    <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">barbacoabar@restaurant.com</span>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="/assets/img/BarBacoaBarWhite_SVG.png" width="160" height="50" alt="BarBacoaBar - Home">
+            </a>
+
+            <nav class="navbar" data-navbar>
+
+                <button class="close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <a href="#" class="logo">
+                    <img src="/assets/img/BarBacoaBarWhite_SVG.png" width="160" height="50" alt="Bar Bacao Bar - Home">
+                </a>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="/indexFrances.html" class="navbar-link hover-underline active">
+                            <div class="separator"></div>
+
+                            <span class="span">Maison</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="text-center">
+
+                    <address class="body-4">
+                        C. de Embajadores, 62, Centro,<br>
+                        28005 Madrid
+                    </address>
+
+                    <p class="body-4 navbar-text">Heures: 9.30 am - 2.30pm</p>
+
+                    <a href="mailto:booking@BarBacoaBar.com" class="body-4 sidebar-link">booking@BarBacoaBar.com</a>
+
+                    <div class="separator"></div>
+
+                    <p class="contact-label">Téléphone</p>
+
+                    <a href="tel:+88123123456" class="body-1 contact-number hover-underline">
+                        +88-123-123456
+                    </a>
+                </div>
+
+            </nav>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
+        </div>
+    </header>
+
+    <main>
+        <article>
+
+            <!-- 
+        - #HERO - Img Home
+      -->
+
+            <section class="hero text-center" aria-label="home" id="home">
+
+                <ul class="hero-slider" data-hero-slider>
+
+                    <li class="slider-item active" data-hero-slider-item>
+
+                        <div class="slider-bg">
+                            <img src="/assets/img/Ejemplo1.jpeg" width="1880" height="950" alt="" class="img-cover">
+                        </div>
+
+                        <p class="label-2 section-subtitle slider-reveal">By Paco Prado</p>
+
+                        <h3 class="display-1 hero-title slider-reveal">
+                            Un bon barbecue <br>
+                            est juste et nécessaire
+                        </h3>
+
+                        <p class="body-2 hero-text slider-reveal">
+                            Bar Bacoa Bar Politique en matière de cookies
+                        </p>
+                    </li>
+
+                    <li class="slider-item" data-hero-slider-item>
+
+                        <div class="slider-bg">
+                            <img src="/assets/img/ejemplo2.jpg" width="1880" height="950" alt="" class="img-cover">
+                        </div>
+
+                        <p class="label-2 section-subtitle slider-reveal">By Paco Prado</p>
+
+                        <h1 class="display-1 hero-title slider-reveal">
+                            Lorem <br>
+                            Ipsum
+                        </h1>
+
+                        <p class="body-2 hero-text slider-reveal">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+
+                    </li>
+
+                </ul>
+
+                <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+                    <ion-icon name="chevron-back"></ion-icon>
+                </button>
+
+                <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                </button>
+
+            </section>
+
+            <!--- Aqui va el texto de aviso legal-->
+
+
+    <!-- 
+    - #FOOTER
+  -->
+    <footer class="footer section has-bg-image text-center"
+        style="background-image: url('/assets/images/footer-bg.jpg')">
+        <div class="container">
+            <!-- Redes Sociales -->
+            <ul class="footer-social">
+                <li><a href="#" class="footer-social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#" class="footer-social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#" class="footer-social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#" class="footer-social-link"><ion-icon name="location"></ion-icon></a></li>
             </ul>
 
-            <!-- Título centrado -->
-            <a class="navbar-brand mx-auto" href="#">Bar <span>Bacoa</span> Bar</a>
-            <!-- Íconos a la derecha -->
-            <div class="navbar-nav">
-                <a class="nav-link" href="mailto:jmg0040@alu.medac.es"><i class="bi bi-person"></i></a>
-                <a class="nav-link" href="tel:+34690904462" id="tel-link"><i class="bi bi-telephone"></i></a>
-            </div>
-        </div>
-    </nav>
-
-    <div class="hero-section">
-        <div class="container">
-            <h1>Cookie Policy</h1>
-            
-            <p>DATOS DEL RESPONSABLE DEL TRATAMIENTO 
-                Razón Social: Kogui 44 S.L.      (en adelante, la “Empresa” o el “Responsable”).
-                Nombre comercial: El Rincón Guay.
-                CIF: B85082790
-                Domicilio:  Calle Embajadores, 62  – 28012 Lavapiés-Madrid
-                Teléfono:  914683700
-                Email para comunicaciones en materia de Protección de datos: riconguaymadrid@gmail.com
-                y en el email: dpd@legalyseguro.es
-                
-                 
-                
-                1.1. Normativa aplicable 
-                
-                Nuestra Política de Privacidad se ha diseñado de acuerdo con el Reglamento General de  Protección de Datos de la UE 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril  de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de  datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva  95/46/CE (Reglamento general de protección de datos), y la Ley Orgánica 3/2018 del 5 de  diciembre, de Protección de Datos de Carácter Personal y Garantía de los Derechos Digitales.
-                
-                Al facilitarnos sus datos, Usted declara haber leído y conocer la presente Política de Privacidad, prestando su consentimiento inequívoco y expreso al tratamiento de sus datos personales de acuerdo a las finalidades y términos aquí expresados.
-                
-                La Empresa podrá modificar la presente Política de Privacidad para adaptarla a las novedades legislativas, jurisprudenciales o de interpretación de la Agencia Española de Protección de Datos. Estas condiciones de privacidad podrán ser complementadas por el Aviso Legal, Política de Cookies y las Condiciones Generales que, en su caso, se recojan para determinados productos o servicios, si dicho acceso supone alguna especialidad en materia de protección de  datos de carácter personal.
-                
-                 
-                
-                1.2. Delegado de Protección de Datos 
-                
-                No hay Delegado de Protección de Datos designado, si hay encargado de tratamiento de datos con email: dpd@legalyseguro.es
-                
-                 
-                
-                FINALIDAD DEL TRATAMIENTO DE LOS DATOS PERSONALES 
-                 
-                
-                El tratamiento que realizamos de sus datos personales responde a las siguientes finalidades:
-                
-                – Proporcionarle información relacionada con los servicios que ofrece nuestra empresa y que detallan en este web site.
-                
-                – Realizar la compra de nuestros servicios a domicilio.
-                
-                – Enviarle por correo electrónico y/o postal las noticias y novedades acerca del Rincón Guay,  así como las actualizaciones de nuestra carta, siempre y cuando  acepte el envío de dichas comunicaciones por medio del botón correspondiente.
-                
-                2.1. Plazo de Conservación de sus datos 
-                
-                Conservaremos sus datos personales desde que nos dé su consentimiento hasta que lo revoque  o bien solicite la limitación del tratamiento. En tales casos, mantendremos sus datos de manera  bloqueada durante los plazos legalmente exigidos.
-                
-                 
-                
-                LEGITIMACIÓN Y DATOS RECABADOS 
-                La legitimación para el tratamiento de sus datos es el consentimiento expreso otorgado mediante  un acto positivo y afirmativo (rellenar el formulario correspondiente y marcar la casilla de  aceptación de esta política) en el momento de facilitarnos sus datos personales.
-                
-                 
-                
-                3.1. Consentimiento para tratar sus datos 
-                
-                Al rellenar los formularios, marcar la casilla “Acepto la Política de Privacidad” y hacer clic para  enviar los datos, o al remitir correos electrónicos a la Empresa a través de las cuentas  habilitadas al efecto, el cliente manifiesta haber leído y aceptado expresamente la presente  política de privacidad, y otorga su consentimiento inequívoco y expreso al tratamiento de sus  datos personales conforme a las finalidades indicadas.
-                
-                3.2. Categorías de datos 
-                
-                Los datos que se recaban se refieren a la categoría de datos identificativos, como pueden ser:  Nombre y Apellidos, Teléfono, Dirección Postal, Empresa, Correo electrónico, la  dirección IP desde donde accede al formulario de recogida de datos la cual es seudominizada por el plugins, así como las imágenes grabadas en nuestro establecimiento, las cuales son eliminadas al mes a no ser que sean solicitadas por fuerzas y cuerpos de seguridad del estado, u organismos judiciales.
-                
-                 
-                
-                MEDIDAS DE SEGURIDAD 
-                Dentro de nuestro compromiso por garantizar la seguridad y confidencialidad de sus datos de  carácter personal, le informamos que se han adoptado las medidas de índole técnica y  organizativas necesarias para garantizar la seguridad de los datos de carácter personal y evitar  su alteración, pérdida, tratamiento o acceso no autorizado, habida cuenta del estado de la  tecnología, la naturaleza de los datos almacenados y los riesgos a que estén expuestos, según  el Art. 32 del RGPD EU 679/2016.
-                
-                 
-                
-                CESIÓN DE DATOS 
-                No se prevén cesiones de datos ni transferencias internacionales de sus datos, a excepción de  las autorizadas por la legislación fiscal, mercantil y de telecomunicaciones así como en aquellos  casos en los que una autoridad judicial nos lo requiera.
-                
-                 
-                
-                DERECHOS DEL USUARIO 
-                Cualquier interesado tiene derecho a obtener confirmación sobre si estamos tratando datos  personales que le conciernan, o no. Las personas interesadas tienen derecho a acceder a sus  datos personales, así como a solicitar la rectificación de los datos inexactos o, en su caso,  solicitar su supresión cuando, entre otros motivos, los datos ya no sean necesarios para los fines  que fueron recogidos. En determinadas circunstancias, los interesados podrán solicitar la limitación del tratamiento de sus datos, en cuyo caso únicamente los conservaremos para el  ejercicio o la defensa de reclamaciones. Por motivos relacionados con su situación particular, los interesados podrán oponerse al tratamiento de sus datos. El Responsable del fichero dejará de  tratar los datos, salvo por motivos legítimos imperiosos, o el ejercicio o la defensa de posibles  reclamaciones.
-                
-                De acuerdo con la legislación vigente tiene los siguientes derechos: derecho a solicitar el acceso  a sus datos personales, derecho a solicitar su rectificación o supresión, derecho a solicitar la  limitación de su tratamiento, derecho a oponerse al tratamiento, derecho a la portabilidad de los  datos y así mismo, a revocar el consentimiento otorgado. Asimismo, tiene derecho a presentar  una reclamación ante la Agencia Española de Protección de Datos.
-                
-                 
-                
-                6.1. ¿Cómo ejercitar mis derechos? 
-                
-                 
-                
-                Para ejercer sus derechos, debe dirigirse al responsable, solicitando el correspondiente  formulario para el ejercicio del derecho elegido. Opcionalmente, puede acudir a la Autoridad de  Control competente para obtener información adicional acerca de sus derechos. Los datos de  contacto para el ejercicio de sus derechos son el teléfono
-                
-                y el correo electrónico:            y en el email dpd@legalyseguro.es. Recuerde acompañar una copia de un documento que nos permita  identificarle.
-                
-                 
-                
-                CONSENTIMIENTO PARA ENVÍO DE COMUNICACIONES ELECTRÓNICAS 
-                Así mismo, y de acuerdo con lo establecido en la Ley 34/2002, de 11 de julio, de Servicios de la  Sociedad de la Información y del Comercio Electrónico, completando el formulario de recogida  de datos y marcando la correspondiente casilla “Acepto el envío de comunicaciones  electrónicas”, está otorgando el consentimiento expreso para enviarle a su dirección de correo  electrónico, teléfono, fax u otro medio electrónico en envío de información acerca de la Empresa.</p>
-        </div>
-    </div>
-
-    <div class="container text-center">
-    </div>
-
-    <footer class="bg-dark text-white py-5">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-4 col-md-6 col-sm-12 mx-auto text-lg-start">
-                    <h5 class="mb-4">Reserves</h5>
-                    <p><strong>Telephone:</strong > <a href="tel:+34690904462" id="tel-link" style="color: white;"> +34 12 345 67 89</a></p>
-                        <p><strong>Email:</strong> <a href="mailto:asdf@asdfbar.es" class="text-white">asdf@asdfbar.es</a>
-                    </p>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mx-auto text-lg-start">
-                    <h5 class="mb-4">Address</h5>
-                    <p>Calle asdf, 42<br>28000 - Madrid</p>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mx-auto text-lg-start">
-                    <h5 class="mb-4">More information</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="./LegalNotice.html" class="text-white">Legal Notice</a></li>
-                        <li><a href="./PrivacyPolicy.html" class="text-white">Privacy Policy</a></li>
-                        <li><a href="./CookiePolicy.html" class="text-white">Cookie Policy</a></li>
-                    </ul>
-                </div>
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; 2024 Bar Bacoa Bar. Tous droits réservés | <a
+                        href="./PolitiqueConfidentiale.html">Politique de Confidentialité</a> | <a
+                        href="./PolitiqueCookies.html">Politique en matière de Cookies</a> | <a
+                        href="./MentionsLegales.html">Mentions Legales</a>
+                </p>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JavaScript (opcional, si necesitas funcionalidad JS de Bootstrap) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/dispositivo.js"></script>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - Assets JS link
+  -->
+    <script src="/assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
