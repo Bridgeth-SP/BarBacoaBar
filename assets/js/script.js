@@ -175,3 +175,28 @@ window.addEventListener("mousemove", function (event) {
   }
 
 });
+
+//COOKIES
+
+// Función para mostrar el pop-up de cookies
+    function showCookiePopup() {
+      var cookiePopup = document.getElementById('cookiePopup');
+      cookiePopup.classList.add('show');
+    }
+
+    function acceptCookies() {
+      hideCookiePopup();
+    }
+
+    function rejectCookies() {
+      hideCookiePopup();
+    }
+
+    function hideCookiePopup() {
+      var cookiePopup = document.getElementById('cookiePopup');
+      cookiePopup.style.display = 'none';
+    }
+
+    window.onload = function() {
+      showCookiePopup();
+    };

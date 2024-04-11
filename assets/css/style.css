@@ -8,25 +8,35 @@
    * COLORS
    */
 
-  --fire-red: hsl(6, 69%, 42%); /* Tipografía 1 */
-  --quick-silver: rgb(252, 252, 252); /* Tipografía Descripción Menú */
-  --smoky-black-1: rgb(28, 130, 156); /* Background Menu */
-  --smoky-black-2: rgb(48, 112, 140); /* Background div */
-  --bkgr-red-1: rgb(101, 163, 194); /* Background */
-  --eerie-black-2: rgba(231, 166, 166, 0.337); /* Formulario */
-  --eerie-black-4: rgb(28, 130, 156); /* Nav */
-  --white: rgb(252, 252, 252); /* Tipografía 2 */
-  --white-alpha-20: hsl(3, 65%, 59%); /* Line Price */
-  --white-alpha-10: hsl(201, 72%, 49%); /* Line Formulario */
-  --black: hsla(0, 0%, 0%, 1); 
+  --fire-red: hsl(200, 49%, 60%);
+  /* Tipografía 1 */
+  --quick-silver: rgb(252, 252, 252);
+  /* Tipografía Descripción Menú */
+  --smoky-black-1: rgb(28, 130, 156);
+  /* Background Menu */
+  --smoky-black-2: rgb(48, 112, 140);
+  /* Background div */
+  --bkgr-red-1: rgb(121, 171, 209);
+  /* Background */
+  --eerie-black-2: rgba(231, 166, 166, 0.337);
+  /* Formulario */
+  --eerie-black-4: rgb(28, 130, 156);
+  /* Nav */
+  --white: rgb(201, 246, 255);
+  /* Tipografía 2 */
+  --white-alpha-20: hsl(3, 65%, 59%);
+  /* Line Price */
+  --white-alpha-10: hsl(201, 72%, 49%);
+  /* Line Formulario */
+  --black: hsla(0, 0%, 0%, 1);
   --black-alpha-80: hsla(0, 1%, 50%, 0.8);
   --black-alpha-15: hsla(0, 0%, 0%, 0.15);
-  
-  background-image: url('/assets/img/textura-Corcho.jpeg');
+
+  background-image: url('/assets/img/Design/textura-Corcho.jpeg');
   background-size: cover;
   background-attachment: fixed;
   color: var(--fire-red);
-  
+
   /**
    * GRADIENT COLOR
    */
@@ -353,7 +363,7 @@ body.nav-active {
 }
 
 .section-subtitle::after {
-  content: url('../img/separator.svg');
+  content: url('../img/Ilustracion/separator.svg');
   display: block;
   width: 100px;
   margin-inline: auto;
@@ -373,7 +383,16 @@ body.nav-active {
   overflow: hidden;
   z-index: 1;
 }
+.btn.btn-primary.custom-btn {
+  border-color: #268cac !important;
+}
 
+.btn.btn-primary.custom-btn:hover {
+  border-color: #268cac !important;
+}
+.custom-btn .text {
+  color: #4577bee3 !important; /* Color blanco para el texto */
+}
 .btn::before {
   content: "";
   position: absolute;
@@ -894,7 +913,7 @@ body.nav-active {
   .navbar-item {
     position: relative;
   }
-  
+
   .idiomas-dropdown {
     position: absolute;
     top: 100%;
@@ -1280,6 +1299,49 @@ textarea.input-field {
   background-repeat: repeat;
   background-position: top left;
 }
+
+
+
+/*-----------------------------------*\
+  #FEATURES
+\*-----------------------------------*/
+
+.features .section-title {
+  margin-block-end: 40px;
+}
+
+.feature-card {
+  padding: 30px 20px 40px;
+}
+
+.feature-item:nth-child(2n+1) .feature-card {
+  background-color: var(--eerie-black-3);
+}
+
+.feature-item:nth-child(2n) .feature-card {
+  background-color: var(--smoky-black-3);
+}
+
+.feature-card .card-icon {
+  max-width: max-content;
+  margin-inline: auto;
+  transition: var(--transition-2);
+}
+
+.feature-card:hover .card-icon {
+  transform: scale(-1) rotate(180deg);
+}
+
+.feature-card .card-title {
+  margin-block: 20px;
+}
+
+.feature-card .card-text {
+  color: var(--quick-silver);
+  line-height: var(--lineHeight-6);
+}
+
+
 
 
 
@@ -2028,6 +2090,13 @@ textarea.input-field {
     padding: 75px 60px;
   }
 
+  /**
+   * FEATURES
+   */
+
+  .features .grid-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
 }
 
@@ -2071,4 +2140,90 @@ textarea.input-field {
     width: max-content;
   }
 
+  /**
+   * FEATURES
+   */
+
+  .features {
+    overflow: visible;
+  }
+
+  .features .shape {
+    display: block;
+  }
+
+  .features .shape-1 {
+    top: -100px;
+    right: 0;
+  }
+
+  .features .shape-2 {
+    bottom: 80px;
+    left: 0;
+  }
+}
+
+/**
+ * Cookies
+ */
+.cookie-popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  display: none;
+}
+
+.cookie-popup.show {
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+}
+
+.cookie-content {
+  text-align: left; 
+}
+
+.cookie-popup p {
+  margin: 0;
+  font-size: 12px;
+  color: black;
+  margin-left: 2%;
+}
+
+.cookie-popup h5 {
+  color: black;
+  margin-bottom: 10px;
+  margin-left: 2%;
+
+}
+
+.cookie-popup-buttons {
+  display: flex;
+  justify-content: flex-end; 
+  width: 100%; 
+}
+
+.cookie-popup-buttons button {
+  margin-left: 10px;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.cookie-popup-buttons button.accept {
+  background-color: #4caf50;
+  color: white;
+}
+
+.cookie-popup-buttons button.reject {
+  background-color: #f44336;
+  color: white;
 }
