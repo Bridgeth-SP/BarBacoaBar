@@ -8,7 +8,7 @@
    * COLORS
    */
 
-  --fire-red: hsl(200, 28%, 39%);
+  --fire-red: hsl(200, 70%, 74%);
   /* Tipografía 1 */
   --quick-silver: rgb(252, 252, 252);
   /* Tipografía Descripción Menú */
@@ -391,7 +391,7 @@ body.nav-active {
   border-color: #268cac !important;
 }
 .custom-btn .text {
-  color: #4577bee3 !important; /* Color blanco para el texto */
+  color: #d6d9dde3 !important; 
 }
 .btn::before {
   content: "";
