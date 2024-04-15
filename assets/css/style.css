@@ -1289,8 +1289,6 @@ textarea.input-field {
   background-position: top left;
 }
 
-/* Botón términos y condiciones */
-
 
 /*-----------------------------------*\
   #FEATURES
@@ -1694,8 +1692,6 @@ textarea.input-field {
     width: calc(50% - 20px);
     margin-inline: auto;
   }
-
-
 
   /**
    * HEADER

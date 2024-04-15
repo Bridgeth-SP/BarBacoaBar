@@ -151,13 +151,14 @@ window.addEventListener("load", autoSlide);
 
 
 /*
-  RESERVATIOS
+  RESERVATION
 */
 
 function toggleSubmitButton() {
   var termsCheckbox = document.getElementById("terms");
   var submitButton = document.getElementById("submitButton");
   submitButton.disabled = !termsCheckbox.checked;
+
 }
 
 /**

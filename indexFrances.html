@@ -510,140 +510,127 @@
         - #RESERVATION
       -->
 
-      
-    <section class="section testi text-center has-bg-image"
-    style="margin-top: 10px; background-image: url('./assets/img/UPbackgroundBBQ.png')" id="contacto">
-</section>
+      <section class="section testi text-center has-bg-image"
+        style="margin-top: 10px; background-image: url('./assets/img/UPbackgroundBBQ.png')" id="contacto">
+      </section>
 
-<section class="reservation">
-    <div class="container">
+      <section class="reservation">
+        <div class="container">
 
-        <div class="form reservation-form bg-black-10">
+          <div class="form reservation-form bg-black-10">
 
-            <form action="https://formsubmit.co/1e6d946b8425bbe788f0e81a296c4993" method="post"
-                class="form-left">
+            <form action="https://formsubmit.co/1e6d946b8425bbe788f0e81a296c4993" method="post" class="form-left">
 
-                <h2 class="headline-1 text-center">Reserva Online</h2>
+              <h2 class="headline-1 text-center">Réservation en ligne</h2>
 
-                <p class="form-text text-center">
-                    Solicitud de Reserva <a href="tel:+34910825021" class="link"
-                        style="color: rgb(52, 52, 52)">+34 910 825 021</a>
-                    o rellenar el siguiente formulario
-                </p>
+              <p class="form-text text-center">
+                Demande de réservation <a href="tel:+34910825021" class="link">+34 910 825 021</a>
+                ou remplir le formulaire suivant
+              </p>
 
-                <div class="input-wrapper">
-                    <input type="text" name="name" placeholder="Nombre" autocomplete="off" class="input-field"
-                        required>
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Nom" autocomplete="off" class="input-field" required>
 
-                    <input type="tel" name="phone" placeholder="Nº Teléfono" autocomplete="off"
-                        class="input-field" required>
+                <input type="tel" name="phone" placeholder="Numéro de téléphone" autocomplete="off" class="input-field"
+                  required>
+              </div>
+
+              <div class="input-wrapper">
+
+                <div class="icon-wrapper">
+                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="person" class="input-field" required
+                    style="color: aqua; background-color: rgb(121, 121, 121);">
+                    <option value="1-person"> 1 Personne</option>
+                    <option value="2-person"> 2 Personnes</option>
+                    <option value="3-person"> 3 Personnes</option>
+                    <option value="4-person"> 4 Personnes</option>
+                    <option value="5-person">+5 Personnes</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                 </div>
 
-                <div class="input-wrapper">
+                <div class="icon-wrapper">
+                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
 
-                    <div class="icon-wrapper">
-                        <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                  <input type="date" name="reservation-date" class="input-field" required>
 
-                        <select name="person" class="input-field"
-                            style="color: aqua; background-color: rgb(121, 121, 121);" required>
-                            <option value="1-person"> 1 Persona</option>
-                            <option value="2-person"> 2 Personas</option>
-                            <option value="3-person"> 3 Personas</option>
-                            <option value="4-person"> 4 Personas</option>
-                            <option value="5-person">+5 Personas</option>
-                        </select>
-
-                        <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
-                    </div>
-
-                    <div class="icon-wrapper">
-                        <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
-
-                        <input type="date" name="reservation-date" class="input-field" required>
-
-                        <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
-                    </div>
-
-                    <div class="icon-wrapper">
-                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                        <!-- Horarios -->
-                        <select name="person" class="input-field"
-                            style="color: aqua; background-color: rgb(121, 121, 121);" required>
-                            <option value="13:00pm">13 : 00 pm</option>
-                            <option value="14:00pm">14 : 00 pm</option>
-                            <option value="15:00pm">15 : 00 pm</option>
-                            <option value="16:00pm">16 : 00 pm</option>
-                            <option value="17:00pm">17 : 00 pm</option>
-                            <option value="18:00pm">18 : 00 pm</option>
-                            <option value="19:00pm">19 : 00 pm</option>
-                            <option value="20:00pm">20 : 00 pm</option>
-                            <option value="21:00pm">21 : 00 pm</option>
-                            <option value="22:00pm">22 : 00 pm</option>
-                            <option value="23:00pm">23 : 00 pm</option>
-                            <option value="00:00am">00 : 00 am</option>
-                            <option value="01:00am">01 : 00 am</option>
-                            <option value="02:00am">02 : 00 am</option>
-                        </select>
-
-                        <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
-                    </div>
-
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                 </div>
 
-                <textarea name="message" placeholder="Mensaje" autocomplete="off" class="input-field"
-                    required></textarea>
+                <div class="icon-wrapper">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
 
-                <!-- Campo de aceptación de términos y condiciones -->
-                <div class="form-group">
-                    <input type="checkbox" id="terms" name="terms" required onchange="toggleSubmitButton()">
-                    <label for="terms">He leído y acepto los <a
-                            href="url_de_tus_terminos_y_condiciones" target="_blank">términos y
-                            condiciones</a></label>
+                  <!-- Horarios -->
+                  <select name="person" class="input-field" style="color: aqua; background-color: rgb(121, 121, 121);"
+                    required>
+                    <option value="13:00pm">13 : 00 pm</option>
+                    <option value="14:00pm">14 : 00 pm</option>
+                    <option value="15:00pm">15 : 00 pm</option>
+                    <option value="16:00pm">16 : 00 pm</option>
+                    <option value="17:00pm">17 : 00 pm</option>
+                    <option value="18:00pm">18 : 00 pm</option>
+                    <option value="19:00pm">19 : 00 pm</option>
+                    <option value="20:00pm">20 : 00 pm</option>
+                    <option value="21:00pm">21 : 00 pm</option>
+                    <option value="22:00pm">22 : 00 pm</option>
+                    <option value="23:00pm">23 : 00 pm</option>
+                    <option value="00:00am">00 : 00 am</option>
+                    <option value="01:00am">01 : 00 am</option>
+                    <option value="02:00am">02 : 00 am</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                 </div>
 
-                <button type="submit" id="submitButton" class="btn btn-secondary" disabled>
-                    <span class="text text-1">Reservar Mesa</span>
+              </div>
 
-                    <span class="text text-2" aria-hidden="true">Reservar Mesa</span>
-                </button>
-                <input type="hidden" name="_next" value="https://barbacoabar.com/index.html">
+              <textarea name="message" placeholder="Message" autocomplete="off" class="input-field" required></textarea>
+
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1">Réserver une table</span>
+
+                <span class="text text-2" aria-hidden="true">Réserver une table</span>
+              </button>
+              <input type="hidden" name="_next" value="https://barbacoabar.com/index.html">
             </form>
 
             <div class="form-right text-center"
-                style="background-image: url('./assets/img/Ilustracion/form-hexagono.png')">
+              style="background-image: url('./assets/img/Ilustracion/form-hexagono.png')">
 
-                <h2 class="headline-1 text-center">Contáctanos</h2>
+              <h2 class="headline-1 text-center">Nous contacter</h2>
 
-                <p class="contact-label">Número</p>
+              <p class="contact-label">Numéro</p>
 
-                <a href="tel:+34910825021" class="body-1 contact-number hover-underline"
-                    style="color: rgb(52, 52, 52);">+34 910 825 021</a>
+              <a href="tel:+34910825021" class="body-1 contact-number hover-underline">+34 910 825 021</a>
 
-                <div class="separator"></div>
+              <div class="separator"></div>
 
-                <p class="contact-label">Ubicación</p>
+              <p class="contact-label">Emplacement</p>
 
-                <address class="body-4">
-                    C. de Embajadores, 64, Centro,<br>
-                    28005 Madrid
-                </address>
+              <address class="body-4">
+                C. de Embajadores, 64, Centro,<br>
+                28005 Madrid
+              </address>
 
-                <p class="contact-label">Horario</p>
+              <p class="contact-label">calendrier</p>
 
-                <p class="body-4">
-                    Jueves: 20:00 - 01:00 <br>
-                    Viernes: 20:00 - 02:00 <br>
-                    Sábado: 13:00 - 02:00 <br>
-                    Domingo: 13:00 - 18:00
-                </p>
+              <p class="body-4">
+                Jeudi : 20h00 - 01h00 <br>
+                Vendredi : 20h00 - 02h00 <br>
+                Samedi : 13h00 - 02h00 <br>
+                Dimanche : 13h00 - 18h00
+              </p>
+
 
             </div>
 
-        </div>
+          </div>
 
-    </div>
-</section>
+        </div>
+      </section>
 
 
       <!-- 
