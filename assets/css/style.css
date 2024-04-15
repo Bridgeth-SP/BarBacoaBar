@@ -16,6 +16,7 @@
   /* Background Menu */
   --smoky-black-2: rgb(48, 112, 140);
   /* Background div */
+  --smoky-black-3: hsla(0, 3%, 7%, 1);
   --bkgr-red-1: rgb(121, 171, 209);
   /* Background */
   --eerie-black-2: rgba(231, 166, 166, 0.337);
@@ -31,7 +32,8 @@
   --black: hsla(0, 0%, 0%, 1);
   --black-alpha-80: hsla(0, 1%, 50%, 0.8);
   --black-alpha-15: hsla(0, 0%, 0%, 0.15);
-
+  /* preload barbacoabar*/
+  --black-preload-1:   hsla(0, 0%, 13%, 1);
   background-image: url('/assets/img/Design/textura-Corcho.jpeg');
   background-size: cover;
   background-attachment: fixed;
@@ -497,7 +499,7 @@ body.nav-active {
 .img-holder {
   aspect-ratio: var(--width) / var(--height);
   overflow: hidden;
-  background-color: var(--eerie-black-4);
+  background-color: var(--black-preload-1);
 }
 
 .btn-text {
@@ -599,6 +601,7 @@ body.nav-active {
 
 
 
+
 /*-----------------------------------*\
   #PRELOAD
 \*-----------------------------------*/
@@ -609,7 +612,7 @@ body.nav-active {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--fire-red);
+  background-color: var(--gold-crayola);
   z-index: 10;
   display: grid;
   place-content: center;
@@ -617,13 +620,9 @@ body.nav-active {
   transition: var(--transition-2);
 }
 
-.preload>* {
-  transition: var(--transition-1);
-}
+.preload > * { transition: var(--transition-1); }
 
-.preload.loaded>* {
-  opacity: 0;
-}
+.preload.loaded > * { opacity: 0; }
 
 .preload.loaded {
   transition-delay: 250ms;
@@ -641,13 +640,8 @@ body.nav-active {
 }
 
 @keyframes rotate360 {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(1turn);
-  }
+  0% { transform: rotate(0); }
+  100% { transform: rotate(1turn); }
 }
 
 .preload .text {
@@ -667,13 +661,8 @@ body.nav-active {
 }
 
 @keyframes loadingText {
-  0% {
-    background-position: 100%;
-  }
-
-  100% {
-    background-position: 0%;
-  }
+  0% { background-position: 100%; }
+  100% { background-position: 0%; }
 }
 
 
@@ -714,7 +703,7 @@ body.nav-active {
 
 .header.active {
   padding-block: 20px;
-  background-color: var(--eerie-black-4);
+  background-color: var(--black-preload-1);
   border-color: var(--black-alpha-15);
 }
 
@@ -1300,6 +1289,7 @@ textarea.input-field {
   background-position: top left;
 }
 
+/* Botón términos y condiciones */
 
 
 /*-----------------------------------*\
@@ -1318,9 +1308,9 @@ textarea.input-field {
   background-color: var(--eerie-black-3);
 }
 
-.feature-item:nth-child(2n) .feature-card {
+/*  .feature-item:nth-child(2n) .feature-card {
   background-color: var(--smoky-black-3);
-}
+} */
 
 .feature-card .card-icon {
   max-width: max-content;

@@ -95,71 +95,91 @@
         </div>
     </div>
 
-    <!-- 
+        <!-- 
     - #HEADER
   -->
 
-    <header class="header" data-header>
-        <div class="container">
+  <header class="header" data-header>
+    <div class="container">
 
-            <a href="#" class="logo">
-                <img src="/assets/img/BarBacoaBarWhite_SVG.png" width="160" height="50" alt="BarBacoaBar - Home">
-            </a>
+        <a href="/index.html" class="logo">
+            <img src="/assets/img/Logo/LogoBarBacoaBarWhite_SVG.png" width="160" height="50" alt="BarBacoaBar - Home">
+          </a>
 
-            <nav class="navbar" data-navbar>
+        <nav class="navbar" data-navbar>
 
-                <button class="close-btn" aria-label="close menu" data-nav-toggler>
-                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-                </button>
-
-                <a href="#" class="logo">
-                    <img src="/assets/img/BarBacoaBarWhite_SVG.png" width="160" height="50" alt="Bar Bacao Bar - Home">
-                </a>
-
-                <ul class="navbar-list">
-
-                    <li class="navbar-item">
-                        <a href="/index.html" class="navbar-link hover-underline active">
-                            <div class="separator"></div>
-
-                            <span class="span">Home</span>
-                        </a>
-                    </li>
-                </ul>
-
-                <div class="text-center">
-
-                    <address class="body-4">
-                        C. de Embajadores, 64, Centro,<br>
-                        28005 Madrid
-                    </address>
-
-                    <a href="mailto:barbacoabar04@gmail.com" class="body-4 sidebar-link">barbacoabar04@gmail.com</a>
-
-                    <div class="separator"></div>
-
-                    <p class="contact-label">Teléfono</p>
-
-                    <a href="tel:+34 910 825 021" class="body-1 contact-number hover-underline">
-                        +34 910 825 021
-                    </a>
-                </div>
-
-            </nav>
-
-            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-                <span class="line line-1"></span>
-                <span class="line line-2"></span>
-                <span class="line line-3"></span>
+            <button class="close-btn" aria-label="close menu" data-nav-toggler>
+                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
             </button>
 
-            <div class="overlay" data-nav-toggler data-overlay></div>
+            <a href="/index.html" class="logo">
+                <img src="/assets/img/Logo/LogoBarBacoaBarWhite_SVG.png" width="160" height="50" alt="BarBacoaBar - Home">
+              </a>
 
-        </div>
-    </header>
+            <ul class="navbar-list">
 
-    <main>
-        <article>
+                <li class="navbar-item">
+                    <a href="#home" class="navbar-link hover-underline active">
+                        <div class="separator"></div>
+
+                        <span class="span">Home</span>
+                    </a>
+                </li>
+
+               
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link hover-underline" id="idiomas-dropdown-btn">
+                        <div class="separator"></div>
+                        <span class="span">Idiomas</span>
+                    </a>
+                    <ul class="idiomas-dropdown" id="idiomas-dropdown">
+                        <li><a href="/index.html"><img src="/assets/img/Banderas/Espana.png" alt="Spanish"
+                                    width="50" height="50" style="margin-bottom: 10px;"> </a></li>
+                        <li><a href="/indexFrances.html"><img src="/assets/img/Banderas/Francia.png" alt="French"
+                                    width="50" height="50" style="margin-bottom: 10px;"></a></li>
+                        <li><a href="/indexIngles.html"><img src="/assets/img/Banderas/Ingles.png" alt="English"
+                                    width="50" height="50" style="margin-bottom: 10px;"></a></li>
+                        <li><a href="/indexPortugues.html"><img src="/assets/img/Banderas/Portugal.png"
+                                    alt="Portuguese" width="50" height="50" style="margin-bottom: 10px;"></a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <div class="text-center">
+
+                <address class="body-4">
+                    C. de Embajadores, 64, Centro,<br>
+                    28005 Madrid
+                </address>
+
+                <a href="mailto:barbacoabar04@gmail.com" class="body-4 sidebar-link">barbacoabar04@gmail.com</a>
+
+                <div class="separator"></div>
+
+                <p class="contact-label">Teléfono</p>
+
+                <a href="tel:+34910825021" class="body-1 contact-number hover-underline">
+                    +34 910 825 021
+                </a>
+            </div>
+
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+</header>
+
+<main>
+    <article>
+
 
             <!-- 
         - #HERO - Img Home
@@ -172,7 +192,7 @@
                     <li class="slider-item active" data-hero-slider-item>
 
                         <div class="slider-bg">
-                            <img src="/assets/img/Ejemplo1.jpeg" width="1880" height="950" alt="" class="img-cover">
+                            <img src="/assets/img/Design/Design.png" width="1880" height="950" alt="" class="img-cover">
                         </div>
 
                         <p class="label-2 section-subtitle slider-reveal">By Paco Prado</p>

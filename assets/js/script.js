@@ -81,7 +81,7 @@ window.addEventListener("scroll", function () {
 const idiomasDropdownBtn = document.getElementById('idiomas-dropdown-btn');
 const idiomasDropdown = document.getElementById('idiomas-dropdown');
 
-idiomasDropdownBtn.addEventListener('click', function() {
+idiomasDropdownBtn.addEventListener('click', function () {
   idiomasDropdown.classList.toggle('active');
 });
 
@@ -150,6 +150,15 @@ addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseout", autoSlide
 window.addEventListener("load", autoSlide);
 
 
+/*
+  RESERVATIOS
+*/
+
+function toggleSubmitButton() {
+  var termsCheckbox = document.getElementById("terms");
+  var submitButton = document.getElementById("submitButton");
+  submitButton.disabled = !termsCheckbox.checked;
+}
 
 /**
  * PARALLAX EFFECT
@@ -179,24 +188,24 @@ window.addEventListener("mousemove", function (event) {
 //COOKIES
 
 // Función para mostrar el pop-up de cookies
-    function showCookiePopup() {
-      var cookiePopup = document.getElementById('cookiePopup');
-      cookiePopup.classList.add('show');
-    }
+function showCookiePopup() {
+  var cookiePopup = document.getElementById('cookiePopup');
+  cookiePopup.classList.add('show');
+}
 
-    function acceptCookies() {
-      hideCookiePopup();
-    }
+function acceptCookies() {
+  hideCookiePopup();
+}
 
-    function rejectCookies() {
-      hideCookiePopup();
-    }
+function rejectCookies() {
+  hideCookiePopup();
+}
 
-    function hideCookiePopup() {
-      var cookiePopup = document.getElementById('cookiePopup');
-      cookiePopup.style.display = 'none';
-    }
+function hideCookiePopup() {
+  var cookiePopup = document.getElementById('cookiePopup');
+  cookiePopup.style.display = 'none';
+}
 
-    window.onload = function() {
-      showCookiePopup();
-    };
+window.onload = function () {
+  showCookiePopup();
+};
