@@ -223,10 +223,10 @@
               <img src="./assets/img/Design/Design3.png" width="1880" height="950" alt="" class="img-cover">
             </div>
 
-            <p class="label-2 section-subtitle slider-reveal" style="font-size: 20px; color: rgb(203, 210, 227);">Por
+            <p class="label-2 section-subtitle slider-reveal" style="font-size: 30px; color: rgb(175, 231, 255);">By
               Paco Prado</p>
 
-            <h3 class="display-1 hero-title slider-reveal" style="font-size: 90px; margin-bottom: 30px; color: white;">
+            <h3 class="display-1 hero-title slider-reveal" style="font-size: 50px; margin-bottom: 30px; color: white;">
               Porque um bom churrasco <br>
               é justo e necessário
             </h3>
@@ -252,10 +252,11 @@
               <img src="./assets/img/Photos BBQ/Design1.png" width="1880" height="950" alt="" class="img-cover">
             </div>
 
-            <p class="label-2 section-subtitle slider-reveal" style="font-size: 20px; color: rgb(28, 0, 83);">By Paco
+            <p class="label-2 section-subtitle slider-reveal" style="font-size: 30px; color: rgb(175, 231, 255);">By
+              Paco
               Prado</p>
 
-            <h3 class="display-1 hero-title slider-reveal" style="font-size: 90px; margin-bottom: 30px; color: white;">
+            <h3 class="display-1 hero-title slider-reveal" style="font-size: 50px; margin-bottom: 30px; color: white;">
               Descubra o prazer do autêntico em cada mordida
             </h3>
 
@@ -326,8 +327,8 @@
               <div class="menu-card hover:card">
 
                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/img/EnsaladaDePaco.png" width="100" height="100" loading="lazy" alt="Lasagne"
-                    class="img-cover">
+                  <img src="./assets/img/Photos BBQ/EnsaladaPaco100x100.jpeg" width="100" height="100" loading="lazy"
+                    alt="Lasagne" class="img-cover">
                 </figure>
 
                 <div>
@@ -431,8 +432,8 @@
               <div class="menu-card hover:card">
 
                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/img/EnsaladaSinRodeos.png" width="100" height="100" loading="lazy" alt="Opu Fish"
-                    class="img-cover">
+                  <img src="./assets/img/Photos BBQ/Ensalada100x100.jpeg" width="100" height="100" loading="lazy"
+                    alt="ensalada sin rodeos" class="img-cover">
                 </figure>
 
                 <div>
@@ -547,7 +548,8 @@
                 <div class="icon-wrapper">
                   <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
-                  <select name="person" class="input-field" style="color: aqua; background-color: rgb(121, 121, 121);" required>
+                  <select name="person" class="input-field" style="color: aqua; background-color: rgb(121, 121, 121);"
+                    required>
                     <option value="1-person"> 1 Pessoa</option>
                     <option value="2-person"> 2 Pessoas</option>
                     <option value="3-person"> 3 Pessoas</option>
@@ -570,7 +572,8 @@
                   <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
 
                   <!-- Horarios -->
-                  <select name="person" class="input-field" style="color: aqua; background-color: rgb(121, 121, 121); " required>
+                  <select name="person" class="input-field" style="color: aqua; background-color: rgb(121, 121, 121); "
+                    required>
                     <option value="13:00pm">13 : 00 pm</option>
                     <option value="14:00pm">14 : 00 pm</option>
                     <option value="15:00pm">15 : 00 pm</option>
@@ -595,6 +598,17 @@
               <textarea name="message" placeholder="Mensagen" autocomplete="off" class="input-field"
                 required></textarea>
 
+              <!-- Campo de aceptación de términos y condiciones -->
+              <div class="form-group" style="margin-bottom: 20px; white-space: nowrap;">
+                <input type="checkbox" id="terms" name="terms" required onchange="toggleSubmitButton()"
+                  style="margin-bottom: 10px;">
+                <label for="terms" style="display: inline-block; overflow: hidden; white-space: nowrap;">
+                  Li e aceito os <a href="/htmlPortugues/PoliticaPrivacidade.html" target="_blank"> termos e condições
+                  </a>
+                </label>
+              </div>
+
+
               <button type="submit" class="btn btn-secondary">
                 <span class="text text-1">Reservar uma Mesa</span>
 
@@ -603,7 +617,8 @@
               <input type="hidden" name="_next" value="https://barbacoabar.com/index.html">
             </form>
 
-            <div class="form-right text-center" style="background-image: url('./assets/img/Ilustracion/form-hexagono.png')">
+            <div class="form-right text-center"
+              style="background-image: url('./assets/img/Ilustracion/form-hexagono.png')">
 
               <h2 class="headline-1 text-center">Entre em contato conosco</h2>
 
@@ -659,10 +674,14 @@
     <div class="container justify-content-center">
       <!-- Redes Sociales -->
       <ul class="footer-social text-center" style="margin-bottom: 20px;">
-        <li><a href="https://www.instagram.com/_barbacoabar_/?next=%2F" class="footer-social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
-        <li><a href="https://twitter.com/BarBacoaBar" class="footer-social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
-        <li><a href="https://www.facebook.com/profile.php?id=61558386059522" class="footer-social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
-        <li><a href="https://maps.app.goo.gl/yJKk62vVt496ygNX7" class="footer-social-link"><ion-icon name="location"></ion-icon></a></li>
+        <li><a href="https://www.instagram.com/_barbacoabar_/?next=%2F" class="footer-social-link"><ion-icon
+              name="logo-instagram"></ion-icon></a></li>
+        <li><a href="https://twitter.com/BarBacoaBar" class="footer-social-link"><ion-icon
+              name="logo-twitter"></ion-icon></a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61558386059522" class="footer-social-link"><ion-icon
+              name="logo-facebook"></ion-icon></a></li>
+        <li><a href="https://maps.app.goo.gl/yJKk62vVt496ygNX7" class="footer-social-link"><ion-icon
+              name="location"></ion-icon></a></li>
       </ul>
 
       <div class="footer-bottom">
